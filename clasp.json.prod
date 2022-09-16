@@ -1,0 +1,5 @@
+# please overwrite content of this file with your .clasp.json file pointing to PROD environment
+
+# I suggest you do not check this file in but add it to .gitignore file instead
+
+# You *must* update `rootDir` with location of `dist` folder, or use relative path `.`

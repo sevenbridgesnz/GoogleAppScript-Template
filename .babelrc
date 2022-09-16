@@ -1,0 +1,32 @@
+{
+    "ignore": [
+      "dist/**/*.test.js"
+    ],
+
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+     ],
+    "env" : {
+      "prod": {
+        "plugins": [
+          ["remove-import-export", {
+            "removeImport": true,
+            "removeExport": true,
+            "removeExportDefault": true,
+            "preseveNamedDeclaration": true
+          }]
+        ],
+        "ignore": [
+          "**/*.test.js",
+          "**/hackDefinitions.js"
+        ]
+       }
+    }
+}
